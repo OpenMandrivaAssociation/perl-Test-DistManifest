@@ -1,9 +1,9 @@
 %define upstream_name    Test-DistManifest
-%define upstream_version 1.009
+%define upstream_version 1.011
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Verify MANIFEST as an author test
 License:    GPL+ or Artistic
@@ -28,16 +28,16 @@ distribution.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
-./Build
+%{__perl} Makefile.PL INSTALLDIRS=vendor
+%make
 
 %check
 rm debugfiles.list debuglinks.list debugsources.list 
-./Build test
+%make test
 
 %install
 rm -rf %buildroot
-./Build install destdir=%{buildroot}
+%makeinstall_std
 
 %clean
 rm -rf %buildroot
