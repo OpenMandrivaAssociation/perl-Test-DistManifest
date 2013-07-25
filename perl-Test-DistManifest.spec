@@ -1,15 +1,15 @@
 %define upstream_name    Test-DistManifest
-%define upstream_version 1.011
+%define upstream_version 1.012
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.012
+Release:	1
 
 Summary:	Verify MANIFEST as an author test
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-DistManifest-1.012.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Manifest)
@@ -60,3 +60,4 @@ rm debugfiles.list debuglinks.list debugsources.list
 
 * Sat Mar 27 2010 cpan2dist 1.009-1mdv
 - initial mdv release, generated with cpan2dist
+
