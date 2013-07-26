@@ -1,2 +1,4 @@
+removed_sources:
+  Test-DistManifest-1.011.tar.gz: 1a97dee9070ddcea017212e5cb1f0ea6225762be
 sources:
-  "Test-DistManifest-1.011.tar.gz": 1a97dee9070ddcea017212e5cb1f0ea6225762be
+  Test-DistManifest-1.012.tar.gz: c3d10eed41566da2b8923b973cd5b7d147dbf5fb
