@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.012
-Release:	1
+Release:	2
 
 Summary:	Verify MANIFEST as an author test
 License:	GPL+ or Artistic
