@@ -8,7 +8,7 @@ Release:	3
 Summary:	Verify MANIFEST as an author test
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Test/Test-DistManifest-1.012.tar.gz
 
 BuildRequires:	perl-devel
