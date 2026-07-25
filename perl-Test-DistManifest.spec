@@ -1,15 +1,15 @@
 %define upstream_name    Test-DistManifest
-%define upstream_version 1.012
+%define upstream_version 1.014
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.012
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Verify MANIFEST as an author test
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-DistManifest-1.012.tar.gz
+Url:		https://github.com/jawnsy/Test-DistManifest
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-DistManifest-1.014.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
