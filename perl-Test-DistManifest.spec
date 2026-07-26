@@ -1,9 +1,7 @@
 %define upstream_name    Test-DistManifest
-%define upstream_version 1.014
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.014
+Release:	2
 
 Summary:	Verify MANIFEST as an author test
 License:	GPL+ or Artistic
@@ -26,7 +24,7 @@ This module provides a simple method of testing that a MANIFEST matches the
 distribution.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
